@@ -1,25 +1,105 @@
 .first
-	margin-top: 50px
-	margin-bottom: 50px
+	position: relative
+	background: url('../img/back-first.jpg') center (center/cover) no-repeat	
+	padding-top: 80px
+	padding-bottom: 70px
+	p
+		margin-bottom: 10px
 	&__items
-		margin-top: 20px
+		margin-top: 40px
+		margin-bottom: 30px
 	&__item
 		margin-top: 10px
 		display: flex
 		font-size: 14px
+	&__descr
+		font-size: 20px
+		margin-bottom: 150px
+		margin-top: 20px
 		.title
 			text-transform: uppercase
 			display: block
 			width: 110px
 		a, .name
 			color: #999	
-		a:hover
-			text-decoration: none
+			img
+				transition: .5s
+				width: 20px
+				margin-right: 10px
+				border-radius: 3px
+				&:hover
+					opacity: .6
 	&__cta
 		margin-top: 20px
-		margin-bottom: 25px
+		margin-bottom: 40px
 		font-size: 16px
 		color: #999	
+	a.button:hover
+		text-decoration: none
+		color: white
 	&__office-img
-		background: url(../img/office.jpg) center center/cover no-repeat
-		min-height: 100%
+		position: relative
+		width: 100%
+		height: 100%
+		img
+			margin: 0 auto
+			max-width: 370px
+			position: absolute
+			right: 0
+			bottom: -70px
+		
+@media (max-width: 991px)
+	.first
+		text-align: center
+		&__office-img
+			img
+				right: -80px
+
+@media (max-width: 767px)
+	.first
+		&__office-img
+			display: none
+		.timer1 
+			margin: 30px auto 40px auto
+		.button
+			margin: 0 auto
+
+@media (max-width: 575px)
+	.first
+		&__descr
+			margin-bottom: 50px
+
+.numbers1 
+  display: block
+  float: left
+  color: white
+  font-size: 40px
+  margin-right: 10px
+
+.description1
+  font-size: 18px
+  text-align: center
+  color: black
+
+.timer1 
+  margin: 30px 0 40px 0
+  padding: 20px 10px;
+  border: 1px solid grey
+  background-color: white
+  color: black
+  border-radius: 10px
+  text-align: center
+  width: 360px
+  height: 165px
+  span 
+    margin-right: 2px
+    background-color: #5f4187
+    border-radius: 7px
+    padding: 4px
+
+
+.container1 
+  display: inline-block;
+
+
+

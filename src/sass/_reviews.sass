@@ -1,0 +1,127 @@
+.reviews
+    padding: 80px 0 70px 0
+    .title-2
+        text-align: center
+        position: relative
+        font-size: 42px
+    &-items
+        .reviews__item
+            position: relative
+            font-size: 14px
+            border: 1px solid #dddddd
+            border-radius: 4px
+            margin: 35px 15px 0
+            padding: 40px 20px 20px 20px
+            min-height: 400px 
+            &:hover
+                border: 1px solid rgba(116, 73, 183, .3)
+            .quote
+                width: 30px
+            .review
+                padding-top: 20px
+            .line
+                position: absolute
+                top: -20px
+                width: 100%
+                height: 1px
+                background-color: #ddd
+
+                
+    .slick-prev, .slick-next
+        position: absolute
+        left: -40px
+        top: 50%
+        transform: translateY(-50%)
+        width: 30px
+        background: none
+        border: none
+    .slick-next
+        right: -40px
+        left: auto
+    .slick-dots
+        padding: 0
+        padding-top: 20px
+        text-align: center
+        margin: 0 auto
+        li
+            position: relative;
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            margin: 0 5px;
+            padding: 0;
+            cursor: pointer;
+            button
+                font-size: 0;
+                line-height: 0;
+                display: block;
+                width: 20px;
+                height: 20px;
+                padding: 5px;
+                cursor: pointer;
+                color: transparent;
+                border: 0;
+                outline: none;
+                background: transparent;
+                &::before
+                    content: '•';
+                    font-size: 22px;
+                    line-height: 20px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    text-align: center;
+                    opacity: .25;
+                    color: black;
+
+
+    &__wrapp
+        position: absolute
+        bottom: 20px
+
+        display: flex
+        justify-content: center
+        align-items: center
+        
+        img
+            display: block
+            width: 60px
+            border-radius: 100%
+            margin-right: 20px
+        &_writer
+            a
+                color: #999
+                font-size: 12px
+                font-weight: 400
+            a:hover
+                color: #7449b7
+
+
+
+@media (max-width: 1199px)
+    .reviews
+        &-items
+            .reviews__item
+                 min-height: 430px
+
+@media (max-width: 991px)
+    .reviews
+        &-items
+            .reviews__item
+                 min-height: 400px
+
+@media (max-width: 767px)
+    .reviews
+        &-items
+            .reviews__item
+                 min-height: 320px
+            
+@media (max-width: 575px)
+    
+    .reviews
+        &-items
+            .reviews__item
+                 min-height: 450px
+                 margin: 35px 5px 0

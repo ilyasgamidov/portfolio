@@ -1,0 +1,66 @@
+.rates
+    margin-bottom: 90px
+    padding-top: 80px
+
+    
+    .wrap__sale, .wrap
+        transition: 0.4s
+        margin: 0 auto
+        margin-top: 20px
+        position: relative
+        background: #9d7fcc
+        max-width: 400px
+        min-height: 620px
+        border-radius: 4px
+        padding: 40px 20px 40px 
+        color: white
+        &:hover
+            margin-top: 5px
+    .wrap
+        background: #a49ab3
+
+    h3
+        text-align: center
+        padding-bottom: 30px
+    ul
+        padding-bottom: 20px
+        list-style-type: none
+        margin-left: 10px
+        li
+            color: #e2daef
+            position: relative
+            &::before
+                content: '';
+                background-image: url(../img/check.svg);
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                background-size: cover;
+                left: -30px;
+                top: 6px
+
+    .price-old
+        text-decoration: line-through
+        text-align: center
+        color: #e2daef
+    .price
+        margin-top: 55px;
+        color: white
+        text-align: center
+        font-size: 46px
+        font-weight: 700  
+    .price-sale
+        color: white
+        text-align: center
+        font-size: 46px
+        font-weight: 700     
+    .subtitle
+        text-align: center
+        margin-bottom: 20px
+        font-size: 20px
+
+
+@media (max-width: 767px)
+    .rates
+        .wrap
+            margin-top: 40px 

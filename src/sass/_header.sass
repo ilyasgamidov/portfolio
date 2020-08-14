@@ -1,17 +1,44 @@
 header
 	.navbar-brand
 		font-weight: 700
-	.navbar-brand:after
-		content: ""
-		display: inline-block
-		margin-left: 2px
-		width: 5px
-		height: 5px
-		border-radius: 100%
-		background: #fff
-
+		font-size: 16px
+	
+	.navbar-light .navbar-toggler
+		border: none
+		&-icon
+			transition: .1s
+			background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+		&-icon:hover
+			background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(116, 73, 183, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+			
 	.bg-color 
-		background-color: #4a3867
+		background-color: #fff
+
+	a.nav-item.nav-link 
+		transition: .6s
+		position: relative
+		padding: 8px 0 !important
+		margin-left: 30px
+		font-size: 14px
+		&:hover
+			color: #7449b7 !important
+		&:before
+			transition: .6s
+			position: absolute
+			content: ""
+			width: 0px
+			height: 3px
+			bottom: 3px
+			left: 50%
+			transform: translateX(-50%)
+			background: none
+
+	a.nav-item.nav-link:hover:before
+		width: 100%
+		height: 3px
+		background: #7449b7
+			
+		
 
 .navbar-expand-lg 
 	.navbar-nav 
@@ -19,3 +46,8 @@ header
 			padding: 0 2rem
 		a:last-child
 			padding-right: 0.5rem
+
+@media (max-width: 991px)
+	header
+		a.nav-item.nav-link:hover:before
+			width: 0px
